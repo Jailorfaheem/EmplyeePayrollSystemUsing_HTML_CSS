@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll</title>
     <link rel="stylesheet" href="../css/EmployeePayrollForm.css">
+    <script src="../js/EmployeePayrollForm.js"></script>
+    <script src="../js/EmployeePayrollData.js"></script>
 </head>
 <body>
     <header class="header-content header">
@@ -18,7 +20,7 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save();return false">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
             <div class="form-head">
                 Employee Payroll Form
             </div>
@@ -153,7 +155,6 @@
             </div>
         </form>
     </div>
-    <script type="text/javascript" src="../js/EmployeePayrollForm.js"></script>
-    <script type="text/javascript" src="../js/EmployeePayrollData.js"></script>    
+    
 </body>
 </html>
