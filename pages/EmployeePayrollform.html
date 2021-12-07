@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll</title>
     <link rel="stylesheet" href="../css/EmployeePayrollForm.css">
+    <script src="../js/EmployeePayrollForm.js"></script>
+    <script src="../js/EmployeePayrollData.js"></script> 
 </head>
 <body>
     <header class="header-content header">
@@ -25,6 +27,7 @@
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name" required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="profile">Profile Image</label>
@@ -138,6 +141,7 @@
                         <option value='2015'>2015</option>
                     </select>
                 </div>
+                <error-output class="date-error" for="startDate"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
@@ -151,8 +155,6 @@
                 </div>
             </div>
         </form>
-    </div>
-    <script type="text/javascript" src="../js/EmployeePayrollForm.js"></script>
-    <script type="text/javascript" src="../js/EmployeePayrollData.js"></script>    
+    </div>   
 </body>
 </html>
